@@ -71,3 +71,4 @@ application.pid
 *.xml
 *.jpg
 
+/src/main/generated
