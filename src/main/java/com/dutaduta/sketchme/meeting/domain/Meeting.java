@@ -1,10 +1,10 @@
 package com.dutaduta.sketchme.meeting.domain;
 
+import com.dutaduta.sketchme.artist.domain.Artist;
+import com.dutaduta.sketchme.artist.domain.User;
 import com.dutaduta.sketchme.chat.domain.ChatRoom;
 import com.dutaduta.sketchme.common.domain.BaseEntity;
 import com.dutaduta.sketchme.common.domain.Category;
-import com.dutaduta.sketchme.member.domain.Artist;
-import com.dutaduta.sketchme.member.domain.User;
 import com.dutaduta.sketchme.product.domain.Picture;
 import com.dutaduta.sketchme.product.domain.Timelapse;
 import jakarta.persistence.*;

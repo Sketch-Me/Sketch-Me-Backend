@@ -1,8 +1,8 @@
 package com.dutaduta.sketchme.auth.adapter.in.api;
 
 
-import com.dutaduta.sketchme.member.domain.Artist;
-import com.dutaduta.sketchme.member.domain.User;
+import com.dutaduta.sketchme.artist.domain.Artist;
+import com.dutaduta.sketchme.artist.domain.User;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PathVariable;

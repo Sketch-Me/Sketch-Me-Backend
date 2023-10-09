@@ -1,25 +1,27 @@
-package com.dutaduta.sketchme.member.domain;
+package com.dutaduta.sketchme.artist.domain;
 
 import com.dutaduta.sketchme.common.domain.BaseEntity;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Entity
-@Builder
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Artist extends BaseEntity {
+public class User extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(length = 512)
+    @Column(length = 1024)
+    private String email;
+
+    @Column(length = 128)
     private String nickname;
+
+    @Column(length = 512)
+    private String phoneNo;
 
     @Column(length = 1024)
     private String profileImgUrl;
@@ -30,16 +32,14 @@ public class Artist extends BaseEntity {
     @Column(length = 1024)
     private String description;
 
+    private boolean isLogined;
+
+    private boolean isDebuted;
+
     private boolean isOpen;
 
-    private boolean isDeactivated;
+    private boolean isDeleted;
 
-    @OneToOne(mappedBy = "artist", fetch = FetchType.LAZY)
-    private User user;
-
-    @OneToMany(mappedBy = "artist")
-    private List<ArtistHashtag> artistHashtagList;
-
-    @OneToMany(mappedBy = "artist")
-    private List<FavoriteArtist> favoriteArtistList;
+    @OneToOne(fetch = FetchType.LAZY)
+    private Artist artist;
 }

@@ -1,4 +1,4 @@
-package com.dutaduta.sketchme.member.domain;
+package com.dutaduta.sketchme.artist.domain;
 
 import com.dutaduta.sketchme.common.domain.BaseEntity;
 import jakarta.persistence.*;
