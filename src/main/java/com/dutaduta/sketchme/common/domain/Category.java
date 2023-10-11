@@ -1,6 +1,6 @@
 package com.dutaduta.sketchme.common.domain;
 
-import com.dutaduta.sketchme.member.domain.Artist;
+import com.dutaduta.sketchme.artist.domain.Artist;
 import jakarta.persistence.*;
 import lombok.*;
 

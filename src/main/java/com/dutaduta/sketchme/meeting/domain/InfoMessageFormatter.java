@@ -1,7 +1,7 @@
 package com.dutaduta.sketchme.meeting.domain;
 
 
-import com.dutaduta.sketchme.member.domain.MemberType;
+import com.dutaduta.sketchme.artist.domain.MemberType;
 
 public class InfoMessageFormatter {
     public static String create(Meeting savedMeeting, MemberType memberType) {
