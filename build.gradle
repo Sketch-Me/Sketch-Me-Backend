@@ -30,6 +30,7 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    testImplementation 'org.projectlombok:lombok:1.18.22'
 //    implementation 'org.springframework.kafka:spring-kafka'
 //    implementation "com.querydsl:querydsl-jpa:${queryDslVersion}:jakarta"
 //    annotationProcessor "com.querydsl:querydsl-apt:${queryDslVersion}:jakarta"
@@ -44,7 +45,9 @@ dependencies {
     runtimeOnly 'com.mysql:mysql-connector-j'
     runtimeOnly 'com.h2database:h2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-//    testImplementation 'org.springframework.security:spring-security-test'
+    testImplementation "org.testcontainers:testcontainers:1.19.0"
+    testImplementation "org.testcontainers:mysql:1.19.1"
+    testImplementation 'org.springframework.security:spring-security-test'
 //    implementation 'com.google.code.gson:gson:2.8.9'
 //     JWT
 //    implementation 'io.jsonwebtoken:jjwt-api:0.11.5'

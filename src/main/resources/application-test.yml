@@ -26,7 +26,7 @@ spring:
 
   datasource:
     url: ${DB_URL}
-    driver-class-name: org.h2.Driver
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
     username: ${DB_USERNAME}
     password: ${DB_PW}
 
