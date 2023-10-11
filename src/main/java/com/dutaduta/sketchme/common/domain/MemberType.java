@@ -1,4 +1,4 @@
-package com.dutaduta.sketchme.user.domain;
+package com.dutaduta.sketchme.common.domain;
 
 public enum MemberType {
     USER,
