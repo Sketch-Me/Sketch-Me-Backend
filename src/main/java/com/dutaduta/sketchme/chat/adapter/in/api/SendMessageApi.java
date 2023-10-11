@@ -4,14 +4,12 @@ import com.dutaduta.sketchme.chat.adapter.in.api.dto.request.MessageDTO;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.messaging.handler.annotation.MessageMapping;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-@CrossOrigin
 public class SendMessageApi {
     /**
      * KAFKA Cluster에 메시지를 전송한다.
