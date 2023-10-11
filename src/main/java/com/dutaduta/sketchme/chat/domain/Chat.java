@@ -1,8 +1,8 @@
 package com.dutaduta.sketchme.chat.domain;
 
-import com.dutaduta.sketchme.artist.domain.MemberType;
-import com.dutaduta.sketchme.artist.domain.User;
 import com.dutaduta.sketchme.common.domain.BaseEntity;
+import com.dutaduta.sketchme.common.domain.MemberType;
+import com.dutaduta.sketchme.user.domain.User;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

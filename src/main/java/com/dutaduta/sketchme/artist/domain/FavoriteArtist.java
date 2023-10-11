@@ -1,6 +1,7 @@
 package com.dutaduta.sketchme.artist.domain;
 
 import com.dutaduta.sketchme.common.domain.BaseEntity;
+import com.dutaduta.sketchme.user.domain.User;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
